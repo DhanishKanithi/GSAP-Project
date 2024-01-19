@@ -1,3 +1,7 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#fullpage'),
+    smooth: true
+});
 var t1 = gsap.timeline(); 
 t1.to("#loader" ,{
     top : "-100vh" ,
@@ -5,7 +9,6 @@ t1.to("#loader" ,{
     duration : 2
 
 })
-
 t1.from("#navbar" , {
     y : -50 ,
     duartion : 0.5 , 
